@@ -1,2 +1,26 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Welcome to Trade-Trade!</h1>
+
+
+<p>What skills are you hoping to learn</p>
+
+
+	
+	<% @skills.each do |skill| %>
+			<input type="checkbox">
+			<%= skill.name %>
+				<br>
+		<% end %>
+
+
+<br>
+
+
+
+<p>which skills can you teach? </p>
+
+
+	<% @skills.each do |skill| %>
+			<input type="checkbox">
+			<%= skill.name %>
+				<br>
+		<% end %>

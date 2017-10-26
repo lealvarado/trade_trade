@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :skills
   root 'home#index'
 
   get 'sign_up' => 'devise/registrations#new'
